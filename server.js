@@ -192,7 +192,10 @@ async function startServer() {
   app.use(
     '/graphql',
     cors({
-      origin: '*',
+      origin: [
+        'http://localhost:3000',
+        'https://tu-frontend-desplegado.railway.app'
+      ],
       methods: ['GET', 'POST', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization']
     }),
