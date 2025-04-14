@@ -194,7 +194,7 @@ async function startServer() {
     cors({
       origin: [
         'http://localhost:3000',
-        'https://tu-frontend-desplegado.railway.app'
+        'https://lighthearted-lebkuchen-6902b8.netlify.app/'
       ],
       methods: ['GET', 'POST', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization']
